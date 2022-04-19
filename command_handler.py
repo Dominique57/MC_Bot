@@ -26,6 +26,7 @@ class CommandHandler(object):
         else:
             if self.SERVER_TYPE == 'RPI':
                 return await ctx.send(f'Unrecognised command: `{command}`')
+            return
 
         if command_data[2] != self.SERVER_TYPE:
             return
