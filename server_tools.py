@@ -3,7 +3,7 @@ import subprocess
 
 
 def try_wake_server():
-    args = ["sudo", "/usr/sbin/etherwake", "-i", "eth0", "10:bf:48:80:61:5a"]
+    args = ["sudo", "/usr/sbin/etherwake", "-i", "eth0", "80:c1:6e:ea:ff:30"]
     subprocess.call(args)
 
 def check_server_up() -> bool:
